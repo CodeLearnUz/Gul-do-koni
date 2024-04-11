@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="/styles/admin.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Admin Dashboard</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/orders">Orders</a></li>
+        <li><a href="/comments">Comments</a></li>
+        <!-- Other navigation links -->
+      </ul>
+    </nav>
+    <main>
+      <!-- Admin dashboard content -->
+      {{#if message}}
+        <p>{{message}}</p>
+      {{else}}
+        <p>Welcome to the Admin Dashboard!</p>
+      {{/if}}
+    </main>
+    <footer>
+    </footer>
+    <!-- JavaScript links -->
+    <script src="/scripts/admin.js"></script>
+  </body>
+</html>

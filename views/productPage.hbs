@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{pageTitle}}</title>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="/styles/product.css" />
+  </head>
+  <body>
+    <header>
+      <h1>{{pageTitle}}</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <!-- Other navigation links -->
+      </ul>
+    </nav>
+    <main>
+      <!-- Product page content -->
+      {{#if product}}
+        <h2>{{product.title}}</h2>
+        <img src="{{product.image}}" alt="{{product.title}}" />
+        <p>{{product.description}}</p>
+        <p>Price: ${{product.amount}}</p>
+      {{else}}
+        <p>Product not found.</p>
+      {{/if}}
+    </main>
+    <footer>
+    </footer>
+    <!-- JavaScript links -->
+    <script src="/scripts/product.js"></script>
+  </body>
+</html>
